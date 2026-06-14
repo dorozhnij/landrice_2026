@@ -1,0 +1,13 @@
+#:schema https://raw.githubusercontent.com/onreza/nrz-cli/main/onreza.schema.json
+
+[project]
+id = "019ec568-48b6-7c76-9ae4-976f3585676a"
+name = "Land Price 2026"
+framework = "static-html"
+
+[build]
+command = "bash scripts/build.sh"
+output_dirs = ["dist"]
+
+[deploy]
+compute = "static"
