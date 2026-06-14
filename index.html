@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Цена продажи земельных участков по регионам России в 2026 году</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uplot@1.6.31/dist/uPlot.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="https://zemlyabot.ru/" target="_blank" rel="noopener noreferrer">земли.тех</a>
+      <button class="topbar__toggle" type="button" aria-expanded="false" aria-controls="topbar-nav" aria-label="Открыть меню">
+        <span class="topbar__toggle-bar"></span>
+        <span class="topbar__toggle-bar"></span>
+        <span class="topbar__toggle-bar"></span>
+      </button>
+      <div class="topbar__nav" id="topbar-nav">
+        <a class="topbar__link" href="https://zemlyabot.ru/landplotbot" target="_blank" rel="noopener noreferrer">Бот проверки участка</a>
+        <a class="topbar__link" href="https://zemlyabot.ru/torgibot" target="_blank" rel="noopener noreferrer">Бот мониторинга торгов</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page">
+    <header class="header">
+      <h1>Цена продажи земельных участков по регионам России в 2026 году</h1>
+      <p class="header__subtitle">
+        Динамика цен на земельные участки формируется на основе более миллионов актуальных объявлений по всей России. Статистика обновляется земли.тех в автоматическом режиме. ИЖС — участки под индивидуальное жилищное строительство. СНТ — земли под дачное строительство. Использование графиков и данных возможно только с гиперссылкой или согласием компании земли.тех. Цена указана в рублях за сотку.
+      </p>
+      <div class="header__cta">
+        <a class="btn btn--primary" href="https://zemlyabot.ru/realestate_deals_bot" target="_blank" rel="noopener noreferrer">Оценить участок</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="charts-grid" class="charts-grid" aria-label="Графики цен по регионам"></section>
+    </main>
+
+    <section class="methodology">
+      <h2>Методология</h2>
+      <p>
+        Публичные данные экспозиции рынка о продаже земельных участков стоимостью более 30 000 руб. Сроки анализа: январь 2025 — апрель 2026. Рассчитана цена за сотку по формуле стоимость / площадь объекта в сотках. Данные очищены от выбросов с аномально низкими или высокими ценами. Тип участка (ИЖС, СНТ) берется из текста объявлений. Сотка: 100 кв. м. ИЖС: индивидуальное жилищное строительство. СНТ: садоводческое некоммерческое товарищество, сюда же входят ДНП.
+      </p>
+    </section>
+
+    <section class="cta-buttons">
+      <a class="btn btn--filled" href="https://zemlyabot.ru/realestate_deals_bot" target="_blank" rel="noopener noreferrer">Оценить участок</a>
+      <a class="btn btn--outline" href="https://zemlyabot.ru/landplotbot" target="_blank" rel="noopener noreferrer">Проверить участок</a>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__copy">© земли.тех 2023-2025</p>
+      <p class="footer__legal">ИП Дресвянин Андрей Валентинович ОГРН 317352500021896</p>
+
+      <div class="footer__columns">
+        <div class="footer__col">
+          <p class="footer__heading">Продукты:</p>
+          <ul class="footer__links">
+            <li><a href="https://zemlyabot.ru/landplotbot" target="_blank" rel="noopener noreferrer">Бот проверки участка</a></li>
+            <li><a href="https://zemlyabot.ru/realestate_deals_bot" target="_blank" rel="noopener noreferrer">Оценка участка</a></li>
+            <li><a href="https://zemlyabot.ru/torgibot" target="_blank" rel="noopener noreferrer">Бот мониторинга торгов</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Соцсети:</p>
+          <ul class="footer__links">
+            <li><a href="https://t.me/zemlytech" target="_blank" rel="noopener noreferrer">Телеграм</a></li>
+            <li><a href="https://vk.com/zemlytech" target="_blank" rel="noopener noreferrer">Вк</a></li>
+            <li><a href="https://max.ru/join/3I5TfiA8flADlNxVqD0HTMrlfbfZADsgedSZluIs7Pc" target="_blank" rel="noopener noreferrer">Макс</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="seo-keywords visually-hidden">
+      узнать цену сделки по кадастровому номеру, сколько стоит участок в кадастровом квартале, цены на земельные участки по кадастровому кварталу, посмотреть количество сделок с землей по региону, анализ спроса на недвижимость в локации, как узнать реальную цену продажи дома (не публичную), мониторинг цен на землю для инвестиций, отчет по сделкам с недвижимостью excel, как понять что участок перекуплен, сделка бот телеграм, история сделок по земельному участку росреестр альтернатива, как найти участок ниже рынка
+    </div>
+  </div>
+
+  <div id="chart-tooltip" class="chart-tooltip" hidden></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/uplot@1.6.31/dist/uPlot.iife.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
