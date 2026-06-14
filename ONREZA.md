@@ -10,8 +10,8 @@
 | Branch | `main` |
 | Framework Preset | **Static HTML** (`static-html`) |
 | Root Directory | `.` |
-| Install Command | *(пусто)* |
-| Build Command | `bash scripts/build.sh` |
+| Install Command | `echo skip` |
+| Build Command | `scripts/build.sh` |
 | Output Directory | `dist` |
 
 Публикуется **содержимое** каталога `dist/` (внутри: `landrice_2026/` и корневой `index.html` с редиректом).

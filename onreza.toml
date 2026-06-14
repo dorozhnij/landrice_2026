@@ -6,7 +6,9 @@ name = "Land Price 2026"
 framework = "static-html"
 
 [build]
-command = "bash scripts/build.sh"
+install_command = "echo skip"
+command = "scripts/build.sh"
+output_directory = "dist"
 output_dirs = ["dist"]
 
 [deploy]
